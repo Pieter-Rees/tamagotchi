@@ -8,13 +8,13 @@ class GameSettings:
     WINDOW_WIDTH: int = 400
     WINDOW_HEIGHT: int = 600
     FPS: int = 60
-    WHITE: Tuple[int, int, int] = (255, 255, 255)
-    BLACK: Tuple[int, int, int] = (0, 0, 0)
-    GRAY: Tuple[int, int, int] = (200, 200, 200)
-    DARK_GRAY: Tuple[int, int, int] = (100, 100, 100)
-    RED: Tuple[int, int, int] = (255, 0, 0)
-    YELLOW: Tuple[int, int, int] = (255, 255, 0)
-    GREEN: Tuple[int, int, int] = (0, 255, 0)
+    WHITE: str = "#FFFFFF"
+    BLACK: str = "#000000"
+    GRAY: str = "#C8C8C8"
+    DARK_GRAY: str = "#646464"
+    RED: str = "#FF0000"
+    YELLOW: str = "#FFFF00"
+    GREEN: str = "#00FF00"
 
 @dataclass
 class PetSettings:
@@ -22,7 +22,7 @@ class PetSettings:
     HUNGER_RATE: float = 0.5
     HAPPINESS_RATE: float = 0.3
     ENERGY_RATE: float = 0.4
-    SLEEP_ENERGY_RECOVERY: float = 20.0
+    SLEEP_ENERGY_RECOVERY: float = 5.0
     FEED_HUNGER_RECOVERY: float = 30.0
     PLAY_HAPPINESS_RECOVERY: float = 25.0
     PLAY_ENERGY_COST: float = 15.0
